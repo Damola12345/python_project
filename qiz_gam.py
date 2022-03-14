@@ -1,5 +1,6 @@
 import sys
 
+
 print("welcome to my favorite artiste game")
 
 playing = input("Do you want to play? ")
@@ -11,15 +12,19 @@ if playing.lower() not in supported_value:
 
 print("okay let's play")
 
-artiste = input("who's my fav artiste: ")
+
+# play a game of artiste guess "young musicians (New-school) "
+artiste = input("who's my fav young artiste: ")
+# Names of nigeria new-school fave artiste and tracklist 
 artiste_db = {
     "buju":         ["something sweet", "never stopped", "i do"],
     "ayra star":    ["beggie beggie", "fashion killer", "lonely"],
     "ruger":        ["dior", "snapchat", "bounce"],
-    "wizkid":       ["big mood", "true love", "blessed"]
+    "tems":         ["crazy tings", "try me", "the key"],
+    "jaywillz":     ["medicine", "whishlist", "spoils"]
 }
 
-print("your fav artiste is {}".format(artiste))
+print("my fav artiste is {}".format(artiste))
 if artiste.lower() in artiste_db:
     print("correct")
 else:
@@ -27,9 +32,10 @@ else:
     sys.exit(1)
 
 
-
+# enter a track of my fav artiste
 artiste_track = input("enter a track of your fav artiste: ")
 
+# if artiste name not found print "artiste not found"
 if artiste not in artiste_db:
     print("Artiste not found")
     sys.exit(1)
@@ -37,6 +43,7 @@ if artiste not in artiste_db:
 
 picked_artiste = artiste_db[artiste]
 
+# if the guess matches print "music found" and if isn't prind "not found" and exit  
 if artiste_track.lower() in picked_artiste:
     print("music found, correct!!! ")
 else:
