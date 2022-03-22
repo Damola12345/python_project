@@ -1,7 +1,7 @@
 # python program
 # Build a simple service rendering app
 
-# Build a simple
+
 import sys
 from db import indexer
 
