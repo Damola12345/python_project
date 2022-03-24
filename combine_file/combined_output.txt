@@ -1,0 +1,4 @@
+I wrote even more Python.
+I wrote some Python today.
+Today I learned how to use the open function in Python.
+Today I planned to write some code, but I watched YouTube instead.
